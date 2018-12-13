@@ -5,7 +5,7 @@ import { BalancesModule } from './balances/balances.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({}),
+    TypeOrmModule.forRoot(),
     BalancesModule,
     DepositsModule,
   ],

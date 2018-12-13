@@ -1,9 +1,22 @@
-{
+[
+  {
+    "name": "default",
     "type": "sqlite",
-    "database": "./data/sqlite.sql",
+    "database": "./data/banking.db",
     "entities": ["src/**/**.entity{.ts,.js}"],
     "migrations": ["migrations/**/**.migration{.ts,.js}"],
     "cli": {
-        "migrationsDir": "migrations"
+      "migrationsDir": "migrations"
     }
-}
+  },
+  {
+    "name": "test",
+    "type": "sqlite",
+    "database": "./data/banking-test.db",
+    "entities": ["src/**/**.entity{.ts,.js}"],
+    "migrations": ["migrations/**/**.migration{.ts,.js}"],
+    "cli": {
+      "migrationsDir": "migrations"
+    }
+  }
+]
